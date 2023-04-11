@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca' ;
+}
+
+body {
+    font-size: 15px;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.container {
+    margin-left: 10rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 35rem 30rem;
+    grid-template-areas: 
+        "products" "reviews"
+        "comments" "comments"
+    ;
+    grid-gap: 2rem;
+    
+    
+}
+
+.products {
+    grid-area: "products";
+    height: 15rem;
+    width: 25rem;
+    display: grid;
+}
+
+
+.reviews {
+    grid-area: "reviews";
+    height: 15rem;
+    width: 30rem;
+    display: grid;
+    
+    
+
+}
+
+.comments{
+    margin-top: 2rem;
+    grid-area: "comments";
+    height: 13rem;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 22rem 22rem 22rem;
+    
+
+}
+
+.products h1 {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 3em;
+    
+}
+
+.products p{
+    color: hsl(300, 43%, 22%);
+    font-weight: 400;
+    font-size: 0.85rem;
+    padding-top: 1.5rem;
+}
+
+.ratings {
+    background-color: hsla(333, 80%, 67%, 0.1);
+    margin: 1rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 0.5rem;
+    width: max-content;
+    padding: 0 2rem;
+}
+
+.ratings.s2 {
+    margin-left: 4rem;
+}
+
+.ratings.s3 {
+    margin-left: 7rem;
+}
+
+.ratings span {
+    padding-left: 1.5rem ;
+    padding-right: 3rem;
+}
+
+.person {
+    background-color: hsla(300, 43%, 22%,0.95);
+    color: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    height: 13rem;
+}
+
+.no2 {
+    margin-top: 1rem;
+}
+
+.no3 {
+    margin-top: 2rem;
+}
+
+.person img {
+    float: left;
+    border-radius: 50%;
+    height: 2.5rem;
+
+}
+
+.person h1 {
+    font-size: 1rem;
+    padding-left: 4rem;
+    font-weight: 500;
+
+}
+
+.person h2 {
+    font-size: 0.9rem;
+    padding-left: 4rem;
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+.sub {
+    height: 2rem;
+    line-height: 1rem;
+    margin-bottom: 1.5rem;
+
+    
+}
+
+.comment {
+    font-size: 0.9rem;
+    line-height: 1rem;
+    font-weight: 200;
+}
+
